@@ -1,4 +1,4 @@
-package kr.co.smartsoft.pizzaorderex.fragment
+package kr.co.smartsoft.pizzaorderex.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,23 +7,22 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kr.co.smartsoft.pizzaorderex.R
 
-class PizzaStoreListFragment: Fragment() {
-
+class MyProfileFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_pizza_store_list, container, false)
+        return inflater.inflate(R.layout.fragment_my_profile, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        setupEvents()
+        setEvents()
         setValues()
     }
 
-    fun setupEvents() {
+    fun setEvents() {
 
     }
 
