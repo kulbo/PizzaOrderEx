@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.willy.ratingbar.ScaleRatingBar
 import kr.co.smartsoft.pizzaorderex.R
 import kr.co.smartsoft.pizzaorderex.datas.StoreData
@@ -32,6 +33,8 @@ class StoreAdapter(
         val ratingBar = row.findViewById<ScaleRatingBar>(R.id.ratingBar)
 
         txtStoreName.text = data.name
+
+        Glide.with(mContext).load(data.logoImageURL).into(imgLogo)
 
         return row
     }
