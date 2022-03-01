@@ -16,7 +16,11 @@
         android:id="@+id/editNickname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="닉네밍 자유 변겨"
+        android:hint="닉네밍 자유 변경"
         android:singleLine="true"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="닉네임 변경"/>
 </LinearLayout>
