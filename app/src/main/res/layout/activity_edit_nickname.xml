@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:padding="20dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EditNicknameActivity">
@@ -13,14 +14,15 @@
         android:text="닉네임"/>
 
     <EditText
-        android:id="@+id/editNickname"
+        android:id="@+id/edtNickname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="닉네밍 자유 변경"
         android:singleLine="true"/>
 
     <Button
+        android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="닉네임 변경"/>
+        android:text="저장하기"/>
 </LinearLayout>
